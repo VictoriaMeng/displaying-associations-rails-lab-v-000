@@ -4,7 +4,7 @@ class SongsController < ApplicationController
   end
 
   def show
-    find 
+    find
   end
 
   def new
@@ -49,7 +49,7 @@ class SongsController < ApplicationController
     params.require(:song).permit(:title)
   end
 
-  def find 
+  def find
     @song = Song.find(params[:id])
   end
 end
